@@ -23,6 +23,7 @@ namespace DatingApp.API.Controllers
         }
 
         // GET api/values
+        [AllowAnonymous]  //Example for no token needed
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
